@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c2b98b4-2bfa-4567-8d3d-61dd27739335" name="Changes" comment="20.11.18">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pose.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pose.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/result_final.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jehee0223"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jehee0223/training_motion.git",
+    "accountId": "c75780b5-150a-46ac-8d5f-914ad02bbd7f"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -40,37 +55,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.LSTM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bodylandmarker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.check.executor&quot;: &quot;Run&quot;,
-    &quot;Python.landmarker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.landmarktest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.loadvideo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.output.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pose.executor&quot;: &quot;Run&quot;,
-    &quot;Python.result.executor&quot;: &quot;Run&quot;,
-    &quot;Python.result_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.result_test1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.result_test_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.result_test_RT.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tensor_split.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.torch_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.training.executor&quot;: &quot;Run&quot;,
-    &quot;Python.validation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.validation_create.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/leejehee/Desktop/pose&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.LSTM.executor": "Run",
+    "Python.bodylandmarker.executor": "Run",
+    "Python.check.executor": "Run",
+    "Python.landmarker.executor": "Run",
+    "Python.landmarktest (1).executor": "Run",
+    "Python.loadvideo.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main_test.executor": "Run",
+    "Python.output.executor": "Run",
+    "Python.pose.executor": "Run",
+    "Python.result.executor": "Run",
+    "Python.result_final (1).executor": "Run",
+    "Python.result_test.executor": "Run",
+    "Python.result_test1.executor": "Run",
+    "Python.result_test_2.executor": "Run",
+    "Python.result_test_RT.executor": "Run",
+    "Python.tensor_split.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.torch_test.executor": "Run",
+    "Python.training.executor": "Run",
+    "Python.validation.executor": "Run",
+    "Python.validation_create.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/leejehee/Desktop/pose",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leejehee\Desktop\pose" />
@@ -86,8 +102,8 @@
       <recent name="C:\Users\leejehee\Desktop\pose\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.result_final">
-    <configuration name="main_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.result_final (1)">
+    <configuration name="result_final (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,7 +116,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result_final.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,18 +215,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.result_final (1)" />
         <item itemvalue="Python.result_final" />
         <item itemvalue="Python.result_test" />
         <item itemvalue="Python.training" />
         <item itemvalue="Python.tensor_split" />
-        <item itemvalue="Python.main_test" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-c69650fc56ca-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15619.17" />
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
       </set>
     </attachedChunks>
   </component>

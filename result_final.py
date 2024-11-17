@@ -14,7 +14,7 @@ draw_line = [[11, 13], [13, 15], [12, 14], [14, 16], [23, 25], [25, 27], [24, 26
 
 # LSTM 모델 초기화
 model.init_model()
-model.net.load_state_dict(torch.load('model/final_model_30_2.pth'))
+model.net.load_state_dict(torch.load('model/final_model_30_2.pth', map_location=torch.device('cpu')))
 model.net.eval()
 
 # 출력 창 크기 설정
@@ -48,7 +48,7 @@ def alert(draw_line_dic, prediction):
         left_ankle = draw_line_dic[27]
         right_ankle = draw_line_dic[28]
 
-        if left_ankle[0] > left_shoulder[0] or right_ankle[0] < right_shoulder[0]:
+        if left_ankle[0] < left_shoulder[0] or right_ankle[0] > right_shoulder[0]:
             warning_message = "Your feet are too close."
 
     elif prediction == 'SLR':
@@ -206,17 +206,16 @@ def process_video_and_display(video_path, interval, sequence_length):
         # 프레임에 예측 결과 표시
         cv2.putText(frame, f"Prediction: {prediction}", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         if prediction=='Squat':
-            cv2.putText(frame, f"Squat Count: {squat_count}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
-            cv2.putText(frame, f"{prev_squat_position}", (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
+            cv2.putText(frame, f"Squat Count: {squat_count}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            cv2.putText(frame, f"{prev_squat_position}", (300, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         elif prediction=='SLR':
-            cv2.putText(frame, f"SLR Count: {slr_count}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
-            cv2.putText(frame, f"{prev_slr_position}", (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
+            cv2.putText(frame, f"SLR Count: {slr_count}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            cv2.putText(frame, f"{prev_slr_position}", (300, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         elif prediction=='SP':
-            cv2.putText(frame, f"SP Count: {sp_count}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
-            cv2.putText(frame, f"{prev_sp_position}", (300, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
+            cv2.putText(frame, f"SP Count: {sp_count}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+            cv2.putText(frame, f"{prev_sp_position}", (300, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         if warning_message:
-            cv2.putText(frame, warning_message, (10, 200), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
-
+            cv2.putText(frame, warning_message, (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
         cv2.imshow("Video", frame)
 
