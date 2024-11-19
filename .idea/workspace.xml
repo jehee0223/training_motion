@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c2b98b4-2bfa-4567-8d3d-61dd27739335" name="Changes" comment="20.11.18">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pose.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pose.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/result_final.py" afterDir="false" />
     </list>
@@ -29,18 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jehee0223"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jehee0223&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jehee0223/training_motion.git",
-    "accountId": "c75780b5-150a-46ac-8d5f-914ad02bbd7f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jehee0223/training_motion.git&quot;,
+    &quot;accountId&quot;: &quot;c75780b5-150a-46ac-8d5f-914ad02bbd7f&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,6 +57,8 @@
   "keyToString": {
     "Python.LSTM.executor": "Run",
     "Python.bodylandmarker.executor": "Run",
+    "Python.cam.executor": "Run",
+    "Python.cam_test.executor": "Run",
     "Python.check.executor": "Run",
     "Python.landmarker.executor": "Run",
     "Python.landmarktest (1).executor": "Run",
@@ -69,7 +69,10 @@
     "Python.output.executor": "Run",
     "Python.pose.executor": "Run",
     "Python.result.executor": "Run",
+    "Python.result_RT.executor": "Run",
+    "Python.result_RT_test.executor": "Run",
     "Python.result_final (1).executor": "Run",
+    "Python.result_final_save.executor": "Run",
     "Python.result_test.executor": "Run",
     "Python.result_test1.executor": "Run",
     "Python.result_test_2.executor": "Run",
@@ -95,15 +98,15 @@
       <recent name="C:\Users\leejehee\Desktop\pose\dataset" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dlwpg\PycharmProjects\training_motion" />
       <recent name="C:\Users\leejehee\Desktop\pose\model" />
       <recent name="C:\Users\leejehee\Desktop\pose" />
       <recent name="C:\Users\leejehee\Desktop\pose\own_dataset" />
       <recent name="C:\Users\leejehee\Desktop\pose\tmp" />
-      <recent name="C:\Users\leejehee\Desktop\pose\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.result_final (1)">
-    <configuration name="result_final (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.result_RT_test">
+    <configuration name="cam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,7 +119,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result_final.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cam.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="result_final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="cam_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,7 +141,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\leejehee\Desktop\pose\result_final.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cam_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,7 +150,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="result_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="result" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,7 +163,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result_test.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\dlwpg\PycharmProjects\training_motion\result.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,7 +172,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tensor_split" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="result_RT_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,7 +185,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensor_split.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result_RT_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,7 +194,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="training" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="result_save" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -204,7 +207,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\dlwpg\PycharmProjects\training_motion\result_save.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.result_RT_test" />
+        <item itemvalue="Python.cam_test" />
+        <item itemvalue="Python.cam" />
+        <item itemvalue="Python.result_save" />
         <item itemvalue="Python.result_final (1)" />
-        <item itemvalue="Python.result_final" />
-        <item itemvalue="Python.result_test" />
-        <item itemvalue="Python.training" />
-        <item itemvalue="Python.tensor_split" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731866901736</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="20.11.18">
+      <option name="closed" value="true" />
+      <created>1731869481438</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731869481438</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

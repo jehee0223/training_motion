@@ -65,8 +65,9 @@ def alert(draw_line_dic, prediction):
         shoulder = draw_line_dic[12]
 
         angle = calculate_angle(elbow, shoulder, (shoulder[0], shoulder[1] - 1))  # 수직 정렬 확인
-        if angle < 70 or angle > 110:
-            warning_message = "Your arms are not vertically aligned."
+        if angle > 110:
+            warning_message = "Your shoulders are too low."
+        print(angle)
 
     return warning_message
 
@@ -118,16 +119,20 @@ def count(draw_line_dic, prediction, prev_squat_position, prev_slr_position, pre
 
         angle = calculate_angle(elbow, shoulder, hip)
 
-        if angle < 60:
+        if angle < 100:
             sp_position = "down"
-        elif angle > 120:
+        elif angle > 140:
             sp_position = "up"
 
         if prev_sp_position == "up" and sp_position == "down":
             sp_count += 1
 
     return squat_position, slr_position, sp_position, squat_count, slr_count, sp_count
-def process_video_and_display(video_path, interval, sequence_length):
+
+video_path = './test_final_1.mp4'
+output_path = './output_video.avi'
+
+def process_video_and_save(video_path, output_path, interval, sequence_length):
     cap = cv2.VideoCapture(video_path)
     frame_count = 0
     xy_list_list = []
@@ -138,7 +143,12 @@ def process_video_and_display(video_path, interval, sequence_length):
     prev_squat_position = None
     prev_slr_position = None
     prev_sp_position = None
-    warning_message=''
+    warning_message = ''
+
+    # 비디오 저장 설정
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')  # 코덱 설정 (XVID는 .avi 형식)
+    fps = int(cap.get(cv2.CAP_PROP_FPS))  # 입력 비디오의 프레임 속도 가져오기
+    out = cv2.VideoWriter(output_path, fourcc, fps, (OUTPUT_WIDTH, OUTPUT_HEIGHT))
 
     while cap.isOpened():
         ret, frame = cap.read()
@@ -169,7 +179,7 @@ def process_video_and_display(video_path, interval, sequence_length):
                     slr_count, sp_count
                 )
 
-                warning_message=alert(draw_line_dic,prediction)
+                warning_message = alert(draw_line_dic, prediction)
 
                 # 예측 수행
                 if len(xy_list_list) == sequence_length:
@@ -183,39 +193,41 @@ def process_video_and_display(video_path, interval, sequence_length):
                             result = model.net(data)
                             _, pred_class = torch.max(result, 1)
                             prediction = "SLR" if pred_class.item() == 1 else "Squat"
-                            if pred_class.item()==0:
-                                prediction='Squat'
-                            elif pred_class.item()==1:
-                                prediction='SLR'
-                            elif pred_class.item()==2:
-                                prediction='SP'
-                            elif pred_class.item()==3:
-                                prediction='waiting'
+                            if pred_class.item() == 0:
+                                prediction = 'Squat'
+                            elif pred_class.item() == 1:
+                                prediction = 'SLR'
+                            elif pred_class.item() == 2:
+                                prediction = 'SP'
+                            elif pred_class.item() == 3:
+                                prediction = 'waiting'
 
                     # 슬라이딩 윈도우 방식
                     xy_list_list = xy_list_list[int(sequence_length / 2):]
 
-                    # 랜드마크 연결 선 그리기
+        # 랜드마크 연결 선 그리기
         for line in draw_line:
             if line[0] in draw_line_dic and line[1] in draw_line_dic:
                 pt1 = draw_line_dic[line[0]]
                 pt2 = draw_line_dic[line[1]]
                 cv2.line(frame, pt1, pt2, (0, 255, 0), 2)
 
-
         # 프레임에 예측 결과 표시
         cv2.putText(frame, f"Prediction: {prediction}", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-        if prediction=='Squat':
+        if prediction == 'Squat':
             cv2.putText(frame, f"Squat Count: {squat_count}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
             cv2.putText(frame, f"{prev_squat_position}", (300, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-        elif prediction=='SLR':
+        elif prediction == 'SLR':
             cv2.putText(frame, f"SLR Count: {slr_count}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
             cv2.putText(frame, f"{prev_slr_position}", (300, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-        elif prediction=='SP':
+        elif prediction == 'SP':
             cv2.putText(frame, f"SP Count: {sp_count}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
             cv2.putText(frame, f"{prev_sp_position}", (300, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         if warning_message:
             cv2.putText(frame, warning_message, (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+
+        # 결과 비디오에 프레임 추가
+        out.write(frame)
 
         cv2.imshow("Video", frame)
 
@@ -225,8 +237,8 @@ def process_video_and_display(video_path, interval, sequence_length):
         frame_count += 1
 
     cap.release()
+    out.release()  # 비디오 저장 종료
     cv2.destroyAllWindows()
 
-# 실행 코드
-video_path = './alone_mix_1.mp4'  # 처리할 비디오 경로
-process_video_and_display(video_path, interval, sequence_length)
+# 실행
+process_video_and_save(video_path, output_path, interval, sequence_length)
