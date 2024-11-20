@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c2b98b4-2bfa-4567-8d3d-61dd27739335" name="Changes" comment="20.11.18">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pose.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pose.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/result_final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +70,7 @@
     "Python.main_test.executor": "Run",
     "Python.output.executor": "Run",
     "Python.pose.executor": "Run",
+    "Python.result (1).executor": "Run",
     "Python.result.executor": "Run",
     "Python.result_RT.executor": "Run",
     "Python.result_RT_test.executor": "Run",
@@ -105,7 +108,7 @@
       <recent name="C:\Users\leejehee\Desktop\pose\tmp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.result_RT_test">
+  <component name="RunManager" selected="Python.result (1)">
     <configuration name="cam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
@@ -150,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="result" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="result (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,7 +166,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\dlwpg\PycharmProjects\training_motion\result.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.result (1)" />
         <item itemvalue="Python.result_RT_test" />
         <item itemvalue="Python.cam_test" />
         <item itemvalue="Python.cam" />
         <item itemvalue="Python.result_save" />
-        <item itemvalue="Python.result_final (1)" />
       </list>
     </recent_temporary>
   </component>
