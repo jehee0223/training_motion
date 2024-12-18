@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c2b98b4-2bfa-4567-8d3d-61dd27739335" name="Changes" comment="20.11.18">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pose.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pose.iml" afterDir="false" />
+    <list default="true" id="5c2b98b4-2bfa-4567-8d3d-61dd27739335" name="Changes" comment="20.11.20">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.py" beforeDir="false" afterPath="$PROJECT_DIR$/result.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_RT.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_save.py" beforeDir="false" afterPath="$PROJECT_DIR$/result_save.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,44 +55,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.LSTM.executor": "Run",
-    "Python.bodylandmarker.executor": "Run",
-    "Python.cam.executor": "Run",
-    "Python.cam_test.executor": "Run",
-    "Python.check.executor": "Run",
-    "Python.landmarker.executor": "Run",
-    "Python.landmarktest (1).executor": "Run",
-    "Python.loadvideo.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main_test.executor": "Run",
-    "Python.output.executor": "Run",
-    "Python.pose.executor": "Run",
-    "Python.result (1).executor": "Run",
-    "Python.result.executor": "Run",
-    "Python.result_RT.executor": "Run",
-    "Python.result_RT_test.executor": "Run",
-    "Python.result_final (1).executor": "Run",
-    "Python.result_final_save.executor": "Run",
-    "Python.result_test.executor": "Run",
-    "Python.result_test1.executor": "Run",
-    "Python.result_test_2.executor": "Run",
-    "Python.result_test_RT.executor": "Run",
-    "Python.tensor_split.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.torch_test.executor": "Run",
-    "Python.training.executor": "Run",
-    "Python.validation.executor": "Run",
-    "Python.validation_create.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/leejehee/Desktop/pose",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.LSTM.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bodylandmarker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cam.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cam_check.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cam_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.check.executor&quot;: &quot;Run&quot;,
+    &quot;Python.landmarker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.landmarktest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.loadvideo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.output.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pose.executor&quot;: &quot;Run&quot;,
+    &quot;Python.result (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.result.executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_RT.executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_RT_origin.executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_RT_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_final (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_final_save.executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_save (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_test1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_test_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.result_test_RT.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tensor_split.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.torch_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.training.executor&quot;: &quot;Run&quot;,
+    &quot;Python.validation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.validation_create.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/leejehee/Desktop/pose&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leejehee\Desktop\pose" />
@@ -108,8 +111,8 @@
       <recent name="C:\Users\leejehee\Desktop\pose\tmp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.result (1)">
-    <configuration name="cam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.landmarker">
+    <configuration name="cam_check" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,7 +125,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cam.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cam_check.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cam_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="landmarker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,7 +147,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cam_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/landmarker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +156,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="result (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="result" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,7 +178,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="result_RT_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="result_RT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,7 +191,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result_RT_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result_RT.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,7 +200,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="result_save" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="result_RT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pose" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -210,7 +213,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\dlwpg\PycharmProjects\training_motion\result_save.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\leejehee\Desktop\pose\result_RT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="result_save (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pose" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result_save.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,18 +246,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.result (1)" />
-        <item itemvalue="Python.result_RT_test" />
-        <item itemvalue="Python.cam_test" />
-        <item itemvalue="Python.cam" />
-        <item itemvalue="Python.result_save" />
+        <item itemvalue="Python.landmarker" />
+        <item itemvalue="Python.result" />
+        <item itemvalue="Python.result_save (1)" />
+        <item itemvalue="Python.result_RT" />
+        <item itemvalue="Python.cam_check" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+        <option value="bundled-python-sdk-c69650fc56ca-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15619.17" />
       </set>
     </attachedChunks>
   </component>
@@ -269,7 +294,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731869481438</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20.11.18">
+      <option name="closed" value="true" />
+      <created>1732102080171</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732102080171</updated>
+    </task>
+    <task id="LOCAL-00005" summary="20.11.20">
+      <option name="closed" value="true" />
+      <created>1732102113583</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732102113583</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,6 +326,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20.11.18" />
-    <option name="LAST_COMMIT_MESSAGE" value="20.11.18" />
+    <MESSAGE value="20.11.20" />
+    <option name="LAST_COMMIT_MESSAGE" value="20.11.20" />
   </component>
 </project>
